@@ -35,3 +35,12 @@
 .Trashes
 ehthumbs.db
 Thumbs.db
+
+# ignored files
+images/covers/cover-bsc-std-nova-fct.pdf
+images/covers/cover-msc-std-nova-fct.pdf
+images/covers/cover-phd-std-nova-fct.pdf
+images/covers/cover-ul-fc_withContent.pdf
+images/covers/nova-ims-front-cover-megi.pdf
+images/covers/nova-ims-front-cover-mgi.pdf
+images/covers/nova-ims-front-cover-phd.pdf
