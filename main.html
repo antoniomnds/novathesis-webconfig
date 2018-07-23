@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="NOVAthesis, LaTeX">
     <link rel="stylesheet" href="styles.css">
-    <script src=""></script>
+    <script src=""></script>    <!--TODO-->
 </head>
 
 <body>
@@ -19,32 +19,53 @@
     </header>
     <section>
         <nav>
-            <p>A section with navigation links between the template configuration pages.</p>
             <ul id="nav_menu">
                 <li>
-                    <a href="main.html">Cover selection</a>
+                    <a class ="active" href="main.html">Cover selection</a>
                 </li>
                 <li>
-                    <a href="">Basic settings</a>
+                    <a href="#">Basic settings</a>
                 </li>
                 <li>
-                    <a href="">Advanced settings</a>
+                    <a href="#">Advanced settings</a>
                 </li>
                 <li>
-                    <a href="">Preview and Configuration Generator</a>
+                    <a href="#">Preview and Configuration Generator</a>
                 </li>
             </ul>
         </nav>
     </section>
+    <section id="intro">
+        <p>Welcome to the NOVAthesis template configuration. Below and in the following pages you'll have the possibility to set
+            document preferences that will have repercussions on a .tex file. In the end, you can generate this file and
+            replace it with the original one in the <strong>/LaTeX</strong> folder of the
+            <a href="https://github.com/joaomlourenco/novathesis" target="_blank">NOVAthesis template</a>. 
+            As such, it is recommended (and necessary) that you first download the latest release, available at the
+            <a href="https://github.com/joaomlourenco/novathesis/releases" target="_blank">NOVAthesis releases page</a>.
+        </p>
+    </section>
     <section>
         <h2>Document cover selection</h2>
         <p>Another section for the document cover selection. Perhaps an image grid with descriptions of the document types.</p>
-        <p>Cover selection will define school and docdegree settings. Docdegree will be reflected in the checklists on the next
-            section.</p>
+        <p>Cover selection will define school and docdegree settings. Docdegree will be reflected in the checklists of the next
+            section.
+        </p>
+
+        <!-- IMAGE GRID -->
+
+
+
     </section>
     <section>
         <h2>Degree selection</h2>
-        <p>Place a listing with checkboxes here.</p>
+        <form>
+            <input type="radio" name="degree" value="phd">Doctor of Philosophy (PhD)<br>
+            <input type="radio" name="degree" value="phdplan">PhD plan<br>
+            <input type="radio" name="degree" value="phdprop">PhD proposal<br>
+            <input type="radio" name="degree" value="msc">Master of Science (Msc)<br>
+            <input type="radio" name="degree" value="mscplan">Msc plan <br>
+            <input type="radio" name="degree" value="bsc">Bachelor of Science (Bsc) <br>
+        </form>
     </section>
     <footer>
         <h2>Footer</h2>

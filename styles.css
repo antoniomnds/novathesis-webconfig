@@ -1,6 +1,6 @@
-/** {
-
-}*/
+* {
+    box-sizing: border-box; /* include padding and border in the element's total width and height */
+}
 body {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
@@ -8,9 +8,11 @@ body {
 header {
     text-align: center;
 }
-/*#cover_img {
-    change proportion with CSS 
-}*/
+#cover_img {
+    /* sets responsive behavior to scale down if needed */
+    max-width: 100%;
+    height: auto;
+}
 #nav_menu {
     margin: 0;
     padding: 0;
@@ -34,3 +36,9 @@ header {
 #nav_menu li a:hover {
     background-color: #444444;
 }
+
+#nav_menu li a.active {
+    background-color: #cccccc;
+    color: black;
+}
+
