@@ -1,8 +1,11 @@
+@charset "UTF-8";
+
 * {
     box-sizing: border-box; /* include padding and border in the element's total width and height */
 }
 body {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 120%
 }
 
 header {

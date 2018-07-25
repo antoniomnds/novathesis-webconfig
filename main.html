@@ -13,9 +13,9 @@
 <body>
     <header>
         <a href="main.html">
-            <img id="cover_img" alt="NOVAthesis cover image" src="images/novathesis_cover_image.jpg" width="800" height="219">
+            <img id="cover_img" alt="NOVAthesis cover image" src="images/novathesis_cover_image.jpg" width="800" height="219"/>
         </a>
-        <h1>NOVAthesis template configuration</h1>
+        <h1 style="padding: 15px">NOVAthesis template configuration</h1>
     </header>
     <section>
         <nav>
@@ -57,14 +57,24 @@
 
     </section>
     <section>
-        <h2>Degree selection</h2>
+        <h2>Document type</h2>
         <form>
-            <input type="radio" name="degree" value="phd">Doctor of Philosophy (PhD)<br>
-            <input type="radio" name="degree" value="phdplan">PhD plan<br>
-            <input type="radio" name="degree" value="phdprop">PhD proposal<br>
-            <input type="radio" name="degree" value="msc">Master of Science (Msc)<br>
-            <input type="radio" name="degree" value="mscplan">Msc plan <br>
-            <input type="radio" name="degree" value="bsc">Bachelor of Science (Bsc) <br>
+            <input type="radio" name="degree" value="phd" checked/>Doctor of Philosophy (PhD)<br/>
+            <input type="radio" name="degree" value="phdplan"/>PhD plan<br/>
+            <input type="radio" name="degree" value="phdprop"/>PhD proposal<br/>
+            <input type="radio" name="degree" value="msc"/>Master of Science (MSc)<br/>
+            <input type="radio" name="degree" value="mscplan"/>Msc plan <br/>
+            <input type="radio" name="degree" value="bsc"/>Bachelor of Science (BSc) <br/>
+        </form>
+    </section>
+    <section>
+        <h2>Academic institution</h2>
+        <form>
+            <input type="radio" name="school" value="nova/fct" checked/><abbr title="Faculdade de Ciências e Tecnologia, Universidade Nova de Lisboa">FCT-NOVA</abbr><br>
+            <input type="radio" name="school" value="nova/fcsh"/><abbr title="Faculdade de Ciências Sociais e Humanas, Universidade Nova de Lisboa">FCSH-NOVA</abbr><br>
+            <input type="radio" name="school" value="nova/ims"/><abbr title="Information Management School, Universidade Nova de Lisboa">NOVA-IMS</abbr><br>
+            <input type="radio" name="school" value="ul/ist"/><abbr title="Instituto Superior Técnico, Universidade de Lisboa">IST-UL</abbr><br>
+            <input type="radio" name="school" value="ul/fc"/><abbr title="Faculdade de Ciências, Universidade de Lisboa">FC-UL</abbr><br>
         </form>
     </section>
     <footer>
