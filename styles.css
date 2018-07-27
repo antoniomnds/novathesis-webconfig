@@ -5,9 +5,8 @@
 }
 body {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 120%
+    font-size: 110%
 }
-
 header {
     text-align: center;
 }
@@ -15,6 +14,9 @@ header {
     /* sets responsive behavior to scale down if needed */
     max-width: 100%;
     height: auto;
+}
+#main_title {
+    padding: 15px;
 }
 #nav_menu {
     margin: 0;
@@ -24,24 +26,26 @@ header {
     list-style-type: none;
     display: block; /* TODO */
 }
-
 #nav_menu li {
     float: left;
 }
-
 #nav_menu li a {
     display: block;
     color: white;
     padding: 16px;
     text-decoration: none;
 }
-
 #nav_menu li a:hover {
     background-color: #444444;
 }
-
 #nav_menu li a.active {
     background-color: #cccccc;
     color: black;
 }
-
+fieldset legend {
+    font-size: 120%;
+}
+input[type="radio"] {
+    margin-left: 0px;
+    margin-top: 10px;
+}

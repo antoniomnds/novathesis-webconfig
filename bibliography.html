@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>NOVAthesis Template Configuration</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="NOVAthesis, LaTeX">
+    <link rel="stylesheet" href="styles.css">
+    <script src=""></script>
+</head>
+
+<body>
+    <header>
+        <a href="main.html">
+            <img id="cover_img" alt="NOVAthesis cover image" src="images/novathesis_cover_image.jpg" width="800" height="219" />
+        </a>
+        <h1 id="main_title">NOVAthesis template configuration</h1>
+    </header>
+    <section>
+        <nav>
+            <ul id="nav_menu">
+                <li>
+                    <a href="main.html">Cover selection</a>
+                </li>
+                <li>
+                    <a href="basic_settings.html">Basic settings</a>
+                </li>
+                <li>
+                    <a href="advanced_settings.html">Advanced settings</a>
+                </li>
+                <li>
+                    <a class="active" href="bibliography.html">Bibliography</a>
+                </li>
+                <li>
+                    <a href="#">Preview and Configuration Generator</a>
+                </li>
+            </ul>
+        </nav>
+    </section>
+    <section style>
+        <h2>Bibliography</h2>
+        <p></p>
+        <form action="" target="_self" method="GET">
+            <!--action sends the form data to a form handler page (server side)-->
+            <p>Back-end (use bibtex if possible)
+                <select name="backend">
+                    <option value="bibtex" selected>bibtex</option>
+                    <option value="biber">biber</option>
+                </select>
+            </p>
+            <label for="sortcites">Sort cites</label>
+            <input type="checkbox" name="sortcites" id="sortcites" checked/>
+            <br/>
+            <p>Sorting
+                <select name="sorting">
+                    <option value="none">none</option>
+                    <option value="nyt" selected>name-year-title</option>
+                    <option value="ynt">year-name-title</option>
+                </select>
+            </p>
+            <p>Style
+                <select name="style">
+                    <option value="numeric-comp" selected>Numeric</option>
+                    <option value="alphabetic">Alphabetic</option>
+                    <option value="authoryear">Author and year</option>
+                    <option value="bwl-FU">bwl-FU</option>
+                </select>
+            </p>
+            <!--maxbibnames=99,     % Never use 'et al' in the bibliography
+                giveninits=true,    % render all first and middle names as initials
+                hyperref=true       % Hyperlinks in citations: true(*) false
+            -->
+            <input type="submit" value="Submit" />
+        </form>
+        <br/>
+        <a href="advanced_settings.html">
+            <button>Back</button>
+        </a>
+        <a href="#preview.html">
+            <button>Next page</button>
+        </a>
+    </section>
+    <section>
+        <h2>Preview</h2>
+        <p>Bibliography page preview here.</p>
+    </section>
+    <footer>
+        <h2>Footer</h2>
+        <p>Links to additional help pages (facebook group, google group), NOVAthesis blog and github repository.</p>
+        <p>Also a license/copyright of some sort.</p>
+        <address>Some contact information</address>
+        <br/>
+        <a href="#cover_img">Back to top</a>
+    </footer>
+
+</html>

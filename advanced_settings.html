@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>NOVAthesis Template Configuration</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="NOVAthesis, LaTeX">
+    <link rel="stylesheet" href="styles.css">
+    <script src=""></script>
+</head>
+
+<body>
+    <header>
+        <a href="main.html">
+            <img id="cover_img" alt="NOVAthesis cover image" src="images/novathesis_cover_image.jpg" width="800" height="219" />
+        </a>
+        <h1 id="main_title">NOVAthesis template configuration</h1>
+    </header>
+    <section>
+        <nav>
+            <ul id="nav_menu">
+                <li>
+                    <a href="main.html">Cover selection</a>
+                </li>
+                <li>
+                    <a href="basic_settings.html">Basic settings</a>
+                </li>
+                <li>
+                    <a class="active" href="advanced_settings.html">Advanced settings</a>
+                </li>
+                <li>
+                    <a href="bibliography.html">Bibliography</a>
+                </li>
+                <li>
+                    <a href="#">Preview and Configuration Generator</a>
+                </li>
+            </ul>
+        </nav>
+    </section>
+    <section>
+        <h2>Advanced settings</h2>
+        <form action="" target="_self" method="GET">
+            <!--action sends the form data to a form handler page (server side)-->
+            <p>Other lists at
+                <select name="otherlistsat">
+                    <option value="front" selected>Front</option>
+                    <option value="back">Back</option>
+                </select>
+            </p>
+            <label for="spine">Spine (check to print book spine)</label>
+            <input type="checkbox" name="spine" id="spine" unchecked/>
+            <br/>
+            <br/>
+            <label for="cdcover">CD cover (check to print CD cover)</label>
+            <input type="checkbox" name="cdcover" id="cdcover" unchecked/>
+            <br/>
+            <p>Paper size
+                <select name="papersize">
+                    <option value="a4paper" selected>A4</option>
+                    <option value="letter">Letter</option>
+                </select>
+            </p>
+            <p>Font size
+                <select name="fontsize">
+                    <option value="10" selected>10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </select>
+            </p>
+            <p>Font style
+                <select name="fontstyle">
+                    <option value="baskervaldx">Baskervaldx</option>
+                    <option value="bookman">Bookman</option>
+                    <option value="charter">Charter</option>
+                    <option value="ebgaramond">Ebgaramond</option>
+                    <option value="fbb">Fbb</option>
+                    <option value="fourier">Fourier</option>
+                    <option value="garamond">Garamond</option>
+                    <option value="heuristica">Heuristica</option>
+                    <option value="kpfonts" selected>Kpfonts</option>
+                    <option value="libertine">Libertine</option>
+                    <option value="mathpazo1">Mathpazo1</option>
+                    <option value="mathpazo2">Mathpazo2</option>
+                    <option value="newcent">Newcent</option>
+                    <option value="newpx">Newpx</option>
+                    <option value="newtx">Newtx</option>
+                </select>
+            </p>
+            <p>Chapter style
+                <select name="chapstyle">
+                    <option value="bianchi">bianchi</option>
+                    <option value="bluebox">bluebox</option>
+                    <option value="brotherton">brotherton</option>
+                    <option value="dash">dash</option>
+                    <option value="default">default</option>
+                    <option value="elegant" selected>elegant</option>
+                    <option value="ell">ell</option>
+                    <option value="ger">ger</option>
+                    <option value="hansen">hansen</option>
+                    <option value="ist">ist</option>
+                    <option value="jenor">jenor</option>
+                    <option value="lyhne">lyhne</option>
+                    <option value="madsen">madsen</option>
+                    <option value="pedersen">pedersen</option>
+                    <option value="veelo">veelo</option>
+                    <option value="vz14">vz14</option>
+                    <option value="vz34">vz34</option>
+                    <option value="vz43">vz43</option>
+                </select>
+            </p>
+            <input type="submit" value="Submit" />
+        </form>
+        <br/>
+        <a href="basic_settings.html">
+            <button>Back</button>
+        </a>
+        <a href="bibliography.html">
+            <button>Next page</button>
+        </a>
+    </section>
+    <footer>
+        <h2>Footer</h2>
+        <p>Links to additional help pages (facebook group, google group), NOVAthesis blog and github repository.</p>
+        <p>Also a license/copyright of some sort.</p>
+        <address>Some contact information</address>
+        <br/>
+        <a href="#cover_img">Back to top</a>
+    </footer>
+
+</html>

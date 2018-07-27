@@ -7,27 +7,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="NOVAthesis, LaTeX">
     <link rel="stylesheet" href="styles.css">
-    <script src=""></script>    <!--TODO-->
+    <script src=""></script>
 </head>
 
 <body>
     <header>
         <a href="main.html">
-            <img id="cover_img" alt="NOVAthesis cover image" src="images/novathesis_cover_image.jpg" width="800" height="219"/>
+            <img id="cover_img" alt="NOVAthesis cover image" src="images/novathesis_cover_image.jpg" width="800" height="219" />
         </a>
-        <h1 style="padding: 15px">NOVAthesis template configuration</h1>
+        <h1 id="main_title">NOVAthesis template configuration</h1>
     </header>
     <section>
         <nav>
             <ul id="nav_menu">
                 <li>
-                    <a class ="active" href="main.html">Cover selection</a>
+                    <a class="active" href="main.html">Cover selection</a>
                 </li>
                 <li>
-                    <a href="#">Basic settings</a>
+                    <a href="basic_settings.html">Basic settings</a>
                 </li>
                 <li>
-                    <a href="#">Advanced settings</a>
+                    <a href="advanced_settings.html">Advanced settings</a>
+                </li>
+                <li>
+                    <a href="bibliography.html">Bibliography</a>
                 </li>
                 <li>
                     <a href="#">Preview and Configuration Generator</a>
@@ -36,19 +39,20 @@
         </nav>
     </section>
     <section id="intro">
-        <p>Welcome to the NOVAthesis template configuration. Below and in the following pages you'll have the possibility to set
-            document preferences that will have repercussions on a .tex file. In the end, you can generate this file and
-            replace it with the original one in the <strong>/LaTeX</strong> folder of the
-            <a href="https://github.com/joaomlourenco/novathesis" target="_blank">NOVAthesis template</a>. 
-            As such, it is recommended (and necessary) that you first download the latest release, available at the
+        <p>Welcome to the NOVAthesis template configuration. Below and in the following pages you'll have the possibility to
+            set document preferences that will have repercussions on a .tex file. In the end, you can generate this file
+            and replace it with the original one in the
+            <strong>/LaTeX</strong> folder of the
+            <a href="https://github.com/joaomlourenco/novathesis" target="_blank">NOVAthesis template</a>. As such, it is recommended (and necessary) that you first download the latest release,
+            available at the
             <a href="https://github.com/joaomlourenco/novathesis/releases" target="_blank">NOVAthesis releases page</a>.
         </p>
     </section>
     <section>
-        <h2>Document cover selection</h2>
+        <h3>Document cover selection</h2>
         <p>Another section for the document cover selection. Perhaps an image grid with descriptions of the document types.</p>
-        <p>Cover selection will define school and docdegree settings. Docdegree will be reflected in the checklists of the next
-            section.
+        <p>Cover selection will define document type and academic institution settings. These values can be changed through the
+            selection of another cover or by selecting the radiobuttons bellow.
         </p>
 
         <!-- IMAGE GRID -->
@@ -57,30 +61,58 @@
 
     </section>
     <section>
-        <h2>Document type</h2>
-        <form>
-            <input type="radio" name="degree" value="phd" checked/>Doctor of Philosophy (PhD)<br/>
-            <input type="radio" name="degree" value="phdplan"/>PhD plan<br/>
-            <input type="radio" name="degree" value="phdprop"/>PhD proposal<br/>
-            <input type="radio" name="degree" value="msc"/>Master of Science (MSc)<br/>
-            <input type="radio" name="degree" value="mscplan"/>Msc plan <br/>
-            <input type="radio" name="degree" value="bsc"/>Bachelor of Science (BSc) <br/>
+        <form action="" target="_self">
+            <fieldset>
+                <!--TODO: define action-->
+                <legend>Document type</legend>
+                <input type="radio" name="degree" value="phd" checked/>Doctor of Philosophy (PhD)
+                <br/>
+                <input type="radio" name="degree" value="phdplan" />PhD plan
+                <br/>
+                <input type="radio" name="degree" value="phdprop" />PhD proposal
+                <br/>
+                <input type="radio" name="degree" value="msc" />Master of Science (MSc)
+                <br/>
+                <input type="radio" name="degree" value="mscplan" />Msc plan
+                <br/>
+                <input type="radio" name="degree" value="bsc" />Bachelor of Science (BSc)
+            </fieldset>
+            <br/>
+            <fieldset>
+                <legend>Academic institution</legend>
+                <input type="radio" name="school" value="nova/fct" checked/>
+                <abbr title="Faculdade de Ciências e Tecnologia, Universidade Nova de Lisboa">FCT-NOVA</abbr>
+                <br/>
+                <input type="radio" name="school" value="nova/fcsh" />
+                <abbr title="Faculdade de Ciências Sociais e Humanas, Universidade Nova de Lisboa">FCSH-NOVA</abbr>
+                <br/>
+                <input type="radio" name="school" value="nova/ims" />
+                <abbr title="Information Management School, Universidade Nova de Lisboa">NOVA-IMS</abbr>
+                <br/>
+                <input type="radio" name="school" value="ul/ist" />
+                <abbr title="Instituto Superior Técnico, Universidade de Lisboa">IST-UL</abbr>
+                <br/>
+                <input type="radio" name="school" value="ul/fc" />
+                <abbr title="Faculdade de Ciências, Universidade de Lisboa">FC-UL</abbr>
+            </fieldset>
+            <br/>
+            <input type="submit" value="Submit" />
+            <!--TODO: make submission result in going to the next page-->
+            <input type="button" value="Next page (not working)">
+            <!--TODO: add link-->
         </form>
-    </section>
-    <section>
-        <h2>Academic institution</h2>
-        <form>
-            <input type="radio" name="school" value="nova/fct" checked/><abbr title="Faculdade de Ciências e Tecnologia, Universidade Nova de Lisboa">FCT-NOVA</abbr><br>
-            <input type="radio" name="school" value="nova/fcsh"/><abbr title="Faculdade de Ciências Sociais e Humanas, Universidade Nova de Lisboa">FCSH-NOVA</abbr><br>
-            <input type="radio" name="school" value="nova/ims"/><abbr title="Information Management School, Universidade Nova de Lisboa">NOVA-IMS</abbr><br>
-            <input type="radio" name="school" value="ul/ist"/><abbr title="Instituto Superior Técnico, Universidade de Lisboa">IST-UL</abbr><br>
-            <input type="radio" name="school" value="ul/fc"/><abbr title="Faculdade de Ciências, Universidade de Lisboa">FC-UL</abbr><br>
-        </form>
+        <br/>
+        <a href="basic_settings.html">
+            <button>Next page</button>
+        </a>
     </section>
     <footer>
         <h2>Footer</h2>
         <p>Links to additional help pages (facebook group, google group), NOVAthesis blog and github repository.</p>
         <p>Also a license/copyright of some sort.</p>
+        <address>Some contact information</address>
+        <br/>
+        <a href="#cover_img">Back to top</a>
     </footer>
 </body>
 

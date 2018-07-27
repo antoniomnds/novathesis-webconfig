@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>NOVAthesis Template Configuration</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="NOVAthesis, LaTeX">
+    <link rel="stylesheet" href="styles.css">
+    <script src=""></script>
+</head>
+
+<body>
+    <header>
+        <a href="main.html">
+            <img id="cover_img" alt="NOVAthesis cover image" src="images/novathesis_cover_image.jpg" width="800" height="219" />
+        </a>
+        <h1 id="main_title">NOVAthesis template configuration</h1>
+    </header>
+    <section>
+        <nav>
+            <ul id="nav_menu">
+                <li>
+                    <a href="main.html">Cover selection</a>
+                </li>
+                <li>
+                    <a class="active" href="basic_settings.html">Basic settings</a>
+                </li>
+                <li>
+                    <a href="advanced_settings.html">Advanced settings</a>
+                </li>
+                <li>
+                    <a href="bibliography.html">Bibliography</a>
+                </li>
+                <li>
+                    <a href="#">Preview and Configuration Generator</a>
+                </li>
+            </ul>
+        </nav>
+    </section>
+    <section>
+        <h2>Basic settings</h2>
+        <form action="" target="_self" method="GET">
+            <!--action sends the form data to a form handler page (server side)-->
+            <p>Language
+                <select name="lang">
+                    <option value="en" selected>English</option>
+                    <option value="fr">Français</option>
+                    <option value="it">Italiano</option>
+                    <option value="pt">Português</option>
+                </select>
+            </p>
+            <p>Cover language
+                <select name="coverlang" size="1">
+                    <option value="en" selected>English</option>
+                    <option value="fr">Français</option>
+                    <option value="it">Italiano</option>
+                    <option value="pt">Português</option>
+                </select>
+            </p>
+            <p>Copyright language
+                <select name="copyrightlang">
+                    <option value="en" selected>English</option>
+                    <option value="fr">Français</option>
+                    <option value="it">Italiano</option>
+                    <option value="pt">Português</option>
+                </select>
+            </p>
+            <label for="aftercover">Aftercover</label>
+            <input type="checkbox" name="aftercover" id="aftercover" checked/>
+            <br/>
+            <p>Link color (set black for printing)
+                <select name="linkcolor">
+                    <option value="darkblue" selected>Dark Blue</option>
+                    <option value="black">Black</option>
+                </select>
+            </p>
+            <label title="Uncheck for submitted versions who should not have the list of committee members" for="printcommittee">Print committee</label>
+            <input type="checkbox" name="printcommittee" id="printcommittee" checked/>
+            <br/>
+            <br/>
+            <label title="Unchecked for final version" for="draft">Draft</label>
+            <input type="checkbox" name="draft" id="draft" unchecked/>
+            <br/>
+            <p title="Screen: left and right margins are equal, colored links 
+Paper: left and right margins are different, black links">Media
+                <select name="media">
+                    <option value="screen" selected>Screen</option>
+                    <option value="paper">Paper</option>
+                </select>
+            </p>
+            <input type="submit" value="Submit" />
+        </form>
+        <br/>
+        <a href="main.html">
+            <button>Back</button>
+        </a>
+        <a href="advanced_settings.html">
+            <button>Next page</button>
+        </a>
+    </section>
+    <footer>
+        <h2>Footer</h2>
+        <p>Links to additional help pages (facebook group, google group), NOVAthesis blog and github repository.</p>
+        <p>Also a license/copyright of some sort.</p>
+        <address>Some contact information</address>
+        <br/>
+        <a href="#cover_img">Back to top</a>
+    </footer>
+
+</html>
