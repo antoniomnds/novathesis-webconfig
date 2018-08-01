@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="NOVAthesis, LaTeX">
     <link rel="stylesheet" href="styles.css">
-    <script src=""></script>
+    <script src="scripts.js"></script>
 </head>
 
 <body>
@@ -48,20 +48,20 @@
             <a href="https://github.com/joaomlourenco/novathesis/releases" target="_blank">NOVAthesis releases page</a>.
         </p>
     </section>
-    <section>
+    <section id="cover_select">
         <h3>Document cover selection</h2>
-        <p>Another section for the document cover selection. Perhaps an image grid with descriptions of the document types.</p>
-        <p>Cover selection will define document type and academic institution settings. These values can be changed through the
-            selection of another cover or by selecting the radiobuttons bellow.
-        </p>
+            <p>Another section for the document cover selection. Perhaps an image grid with descriptions of the document types.</p>
+            <p>Cover selection will define document type and academic institution settings. These values can be changed through
+                the selection of another cover or by selecting the radiobuttons bellow.
+            </p>
 
-        <!-- IMAGE GRID -->
+            <!-- IMAGE GRID -->
 
 
 
     </section>
     <section>
-        <form action="" target="_self">
+        <form id="form_main" action="" onsubmit="nextPage()">
             <fieldset>
                 <!--TODO: define action-->
                 <legend>Document type</legend>
@@ -100,6 +100,7 @@
             <!--TODO: make submission result in going to the next page-->
             <input type="button" value="Next page (not working)">
             <!--TODO: add link-->
+            <input type="reset" value="Default" />
         </form>
         <br/>
         <a href="basic_settings.html">
@@ -108,9 +109,25 @@
     </section>
     <footer>
         <h2>Footer</h2>
-        <p>Links to additional help pages (facebook group, google group), NOVAthesis blog and github repository.</p>
-        <p>Also a license/copyright of some sort.</p>
-        <address>Some contact information</address>
+        <p>Support pages for the template:
+            <a href="https://groups.google.com/forum/#!forum/novathesis" target="_blank">Google group</a> and
+            <a href="https://www.facebook.com/groups/novathesis" target="_blank">Facebook group.</a>
+        </p>
+        <p>Tricks and tips on the template at the
+            <a href="https://novathesis.blogspot.pt/" target="_blank">NOVAthesis blog</a>.
+        </p>
+        <p>If you have any problem or suggestion regarding this page, feel free to fill an issue on this page's repository at
+            <a href="https://github.com/antoniomnds/novathesis-webconfig/issues/new/choose" target="_blank">github</a>.
+        </p>
+        <p>Page repository:
+            <a href="https://github.com/antoniomnds/novathesis-webconfig/" target="_blank">https://github.com/antoniomnds/novathesis-webconfig/</a>.
+        </p>
+        <address>
+            Contact information: <a href="mailto:amn.santos@campus.fct.unl.pt">amn.santos@campus.fct.unl.pt</a>
+        </address>
+        <p>
+            <strong>Also a license/copyright of some sort.</strong>
+        </p>
         <br/>
         <a href="#cover_img">Back to top</a>
     </footer>
