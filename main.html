@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <header>
+    <header class="content">
         <a href="main.html">
             <img id="cover_img" alt="NOVAthesis cover image" src="images/novathesis_cover_image.jpg" width="800" height="219" />
         </a>
@@ -33,12 +33,21 @@
                     <a href="bibliography.html">Bibliography</a>
                 </li>
                 <li>
-                    <a href="#">Preview and Configuration Generator</a>
+                    <a href="#preview">Preview</a>
+                </li>
+                <li class="dropdown right"><a class ="dropbtn" href="javascript:void(0)">Links</a>
+                    <div class="dropdown-content">
+                        <a href="https://groups.google.com/forum/#!forum/novathesis" target="_blank">Google group</a>
+                        <a href="https://www.facebook.com/groups/novathesis" target="_blank">Facebook group</a>
+                        <a href="https://novathesis.blogspot.pt/" target="_blank">NOVAthesis blog</a>
+                        <a href="https://github.com/joaomlourenco/novathesis" target="_blank">Github repository</a>
+                        <a href="https://github.com/antoniomnds/novathesis-webconfig/" target="_blank">About</a>
+                    </div>
                 </li>
             </ul>
         </nav>
     </section>
-    <section id="intro">
+    <section class="content" id="intro">
         <p>Welcome to the NOVAthesis template configuration. Below and in the following pages you'll have the possibility to
             set document preferences that will have repercussions on a .tex file. In the end, you can generate this file
             and replace it with the original one in the
@@ -48,8 +57,8 @@
             <a href="https://github.com/joaomlourenco/novathesis/releases" target="_blank">NOVAthesis releases page</a>.
         </p>
     </section>
-    <section id="cover_select">
-        <h3>Document cover selection</h2>
+    <section class="content" id="cover_select">
+        <h2>Document cover selection</h2>
             <p>Another section for the document cover selection. Perhaps an image grid with descriptions of the document types.</p>
             <p>Cover selection will define document type and academic institution settings. These values can be changed through
                 the selection of another cover or by selecting the radiobuttons bellow.
@@ -60,7 +69,7 @@
 
 
     </section>
-    <section>
+    <section class="content">
         <form id="form_main" action="" onsubmit="nextPage()">
             <fieldset>
                 <!--TODO: define action-->
@@ -98,7 +107,7 @@
             <br/>
             <input type="submit" value="Submit" />
             <!--TODO: make submission result in going to the next page-->
-            <input type="button" value="Next page (not working)">
+            <input type="button" value="Next page (not working)" onclick="nextPage()">
             <!--TODO: add link-->
             <input type="reset" value="Default" />
         </form>
@@ -106,14 +115,19 @@
         <a href="basic_settings.html">
             <button>Next page</button>
         </a>
+        <br/>
+        <!--
+        <button onclick="showFormData('form_main')">Show form content</button>
+        <p id="form_content"></p>
+        -->
+        
     </section>
-    <footer>
+    <footer class="content">
         <h2>Footer</h2>
-        <p>Support pages for the template:
-            <a href="https://groups.google.com/forum/#!forum/novathesis" target="_blank">Google group</a> and
-            <a href="https://www.facebook.com/groups/novathesis" target="_blank">Facebook group.</a>
-        </p>
-        <p>Tricks and tips on the template at the
+        <p>You can get aditional support at the
+            <a href="https://groups.google.com/forum/#!forum/novathesis" target="_blank">Google</a> and
+            <a href="https://www.facebook.com/groups/novathesis" target="_blank">Facebook</a>
+            group pages and find some tricks and tips on the template at the
             <a href="https://novathesis.blogspot.pt/" target="_blank">NOVAthesis blog</a>.
         </p>
         <p>If you have any problem or suggestion regarding this page, feel free to fill an issue on this page's repository at
@@ -126,7 +140,7 @@
             Contact information: <a href="mailto:amn.santos@campus.fct.unl.pt">amn.santos@campus.fct.unl.pt</a>
         </address>
         <p>
-            <strong>Also a license/copyright of some sort.</strong>
+            <strong>License/copyright of some sort.</strong>
         </p>
         <br/>
         <a href="#cover_img">Back to top</a>
