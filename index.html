@@ -18,7 +18,7 @@
         </a>
         <h1 id="main_title">NOVAthesis template configuration</h1>
     </header>
-    <nav>
+    <nav class="topnav" id="myNav">
         <ul>
             <li>
                 <a class="active" href="index.html">
@@ -54,6 +54,9 @@
                             <span class="fab fa-github"> Code repository</span>
                         </a>
                 </div>
+            </li>
+            <li class="icon">
+                <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
             </li>
         </ul>
     </nav>
@@ -135,37 +138,37 @@
     <section class="content">
         <form id="form_main" action="" onsubmit="nextPage()">
             <fieldset>
-                <!--TODO: define action-->
+                <!--TODO: define form action-->
                 <legend>Document type</legend>
-                <input type="radio" name="degree" value="phd" checked/>Doctor of Philosophy (PhD)
+                <label><input type="radio" name="degree" value="phd" checked/>Doctor of Philosophy (PhD)</label>
                 <br/>
-                <input type="radio" name="degree" value="phdplan" />PhD plan
+                <label><input type="radio" name="degree" value="phdplan" />PhD plan</label>
                 <br/>
-                <input type="radio" name="degree" value="phdprop" />PhD proposal
+                <label><input type="radio" name="degree" value="phdprop" />PhD proposal</label>
                 <br/>
-                <input type="radio" name="degree" value="msc" />Master of Science (MSc)
+                <label><input type="radio" name="degree" value="msc" />Master of Science (MSc)</label>
                 <br/>
-                <input type="radio" name="degree" value="mscplan" />Msc plan
+                <label><input type="radio" name="degree" value="mscplan" />Msc plan</label>
                 <br/>
-                <input type="radio" name="degree" value="bsc" />Bachelor of Science (BSc)
+                <label><input type="radio" name="degree" value="bsc" />Bachelor of Science (BSc)</label>
             </fieldset>
             <br/>
             <fieldset>
                 <legend>Academic institution</legend>
-                <input type="radio" name="school" value="nova/fct" checked/>
-                <abbr title="Faculdade de Ciências e Tecnologia, Universidade Nova de Lisboa">FCT-NOVA</abbr>
+                <label><input type="radio" name="school" value="nova/fct" checked/>
+                <abbr title="Faculdade de Ciências e Tecnologia, Universidade Nova de Lisboa">FCT-NOVA</abbr></label>
                 <br/>
-                <input type="radio" name="school" value="nova/fcsh" />
-                <abbr title="Faculdade de Ciências Sociais e Humanas, Universidade Nova de Lisboa">FCSH-NOVA</abbr>
+                <label><input type="radio" name="school" value="nova/fcsh"/>
+                <abbr title="Faculdade de Ciências Sociais e Humanas, Universidade Nova de Lisboa">FCSH-NOVA</abbr></label>
                 <br/>
-                <input type="radio" name="school" value="nova/ims" />
-                <abbr title="Information Management School, Universidade Nova de Lisboa">NOVA-IMS</abbr>
+                <label><input type="radio" name="school" value="nova/ims"/>
+                <abbr title="Information Management School, Universidade Nova de Lisboa">NOVA-IMS</abbr></label>
                 <br/>
-                <input type="radio" name="school" value="ul/ist" />
-                <abbr title="Instituto Superior Técnico, Universidade de Lisboa">IST-UL</abbr>
+                <label><input type="radio" name="school" value="ul/ist" />
+                <abbr title="Instituto Superior Técnico, Universidade de Lisboa">IST-UL</abbr></label>
                 <br/>
-                <input type="radio" name="school" value="ul/fc" />
-                <abbr title="Faculdade de Ciências, Universidade de Lisboa">FC-UL</abbr>
+                <label><input type="radio" name="school" value="ul/fc" />
+                <abbr title="Faculdade de Ciências, Universidade de Lisboa">FC-UL</abbr></label>
             </fieldset>
             <br/>
             <input type="submit" value="Submit" />

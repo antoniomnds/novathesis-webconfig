@@ -8,7 +8,7 @@
     <meta name="keywords" content="NOVAthesis, LaTeX">
     <link rel="stylesheet" href="myStyles.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-    <script src=""></script>
+    <script src="myScripts.js"></script>
 </head>
 
 <body>
@@ -18,7 +18,7 @@
         </a>
         <h1 id="main_title">NOVAthesis template configuration</h1>
     </header>
-    <nav>
+    <nav class="topnav" id="myNav">
         <ul>
             <li>
                 <a href="index.html"><span style="color: black"><span class="fas fa-home"></span></span> Home</a>
@@ -35,8 +35,10 @@
             <li>
                 <a href="#preview">Preview</a>
             </li>
-            <li class="dropdown right">
-                <a class="dropbtn" href="javascript:void(0)">Links</a>
+            <li class="right dropdown">
+                <a class="dropbtn" href="javascript:void(0)">Links
+                        <span class="fa fa-caret-down"></span>
+                    </a>
                 <div class="dropdown-content">
                     <a href="https://groups.google.com/forum/#!forum/novathesis" target="_blank">
                             <span class="fab fa-google"> Google group</span>
@@ -51,6 +53,9 @@
                             <span class="fab fa-github"> Code repository</span>
                         </a>
                 </div>
+            </li>
+            <li class="icon">
+                <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
             </li>
         </ul>
     </nav>
@@ -125,10 +130,6 @@ Paper: left and right margins are different, black links">Media
         <p>If you have any problem or suggestion regarding this page, feel free to fill an issue on this page's repository at
             <a href="https://github.com/antoniomnds/novathesis-webconfig/issues/new/choose" target="_blank">github</a>.
         </p>
-        <address>
-            Contact information:
-            <a href="mailto:amn.santos@campus.fct.unl.pt">amn.santos@campus.fct.unl.pt</a>
-        </address>
         <p>
             <strong>License/copyright of some sort.</strong>
         </p>
@@ -139,5 +140,5 @@ Paper: left and right margins are different, black links">Media
                 <span class="fab fa-github"></span>
             </a>
     </footer>
-    </body>
+</body>
 </html>
