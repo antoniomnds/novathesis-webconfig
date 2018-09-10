@@ -69,27 +69,18 @@
                     <option value="front" selected>Front</option>
                     <option value="back">Back</option>
                 </select>
+                <span class="note">Where to put the other lists besides the table of contents. The default is (<em>front</em>) before the main text. <br/>But some scientific areas prefer them at the end of the document (<em>back</em>), just before the <em>Appendixes</em>.</span>
             </p>
-            <label for="spine">Spine (check to print book spine)</label>
+            <label for="spine">Spine</label>
             <input type="checkbox" name="spine" id="spine" unchecked/>
+            <span class="note">Check to print book spine.</span>
             <br/>
             <br/>
-            <label for="cdcover">CD cover (check to print CD cover)</label>
+            <label for="cdcover">CD cover</label>
             <input type="checkbox" name="cdcover" id="cdcover" unchecked/>
+            <span class="note">Check to print CD cover.</span>
             <br/>
-            <p>Paper size
-                <select name="papersize">
-                    <option value="a4paper" selected>A4</option>
-                    <option value="letter">Letter</option>
-                </select>
-            </p>
-            <p>Font size
-                <select name="fontsize">
-                    <option value="10">10</option>
-                    <option value="11" selected>11</option>
-                    <option value="12">12</option>
-                </select>
-            </p>
+            
             <p>Font style
                 <select name="fontstyle">
                     <option value="baskervaldx">Baskervaldx</option>
@@ -108,6 +99,7 @@
                     <option value="newpx">Newpx</option>
                     <option value="newtx">Newtx</option>
                 </select>
+                <span class="note">The font set to be used in the document. Please note that this includes definitions for the main text, headings, maths, etc.</span>
             </p>
             <p>Chapter style
                 <select name="chapstyle">
@@ -130,6 +122,7 @@
                     <option value="vz34">vz34</option>
                     <option value="vz43">vz43</option>
                 </select>
+                <span class="note">The look of the chapter beginning.</span>
             </p>
             <input type="submit" value="Submit" />
         </form>

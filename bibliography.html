@@ -62,24 +62,17 @@
     </nav>
     <section class="content">
         <h2>Bibliography</h2>
-        <p></p>
+        <!--##########################
+        ###### BIBLATEX OPTIONS ######
+        ###########################-->
         <form action="" target="_self" method="GET">
             <!--action sends the form data to a form handler page (server side)-->
-            <p>Back-end (use bibtex if possible)
+            <p>Back-end 
                 <select name="backend">
                     <option value="bibtex" selected>bibtex</option>
                     <option value="biber">biber</option>
                 </select>
-            </p>
-            <label for="sortcites">Sort cites</label>
-            <input type="checkbox" name="sortcites" id="sortcites" checked/>
-            <br/>
-            <p>Sorting
-                <select name="sorting">
-                    <option value="none">none</option>
-                    <option value="nyt" selected>name-year-title</option>
-                    <option value="ynt">year-name-title</option>
-                </select>
+                <span class="note">Use bibtex if possible.</span>
             </p>
             <p>Style
                 <select name="style">
@@ -89,6 +82,18 @@
                     <option value="bwl-FU">bwl-FU</option>
                 </select>
             </p>
+            <label for="sortcites">Sort cites</label>
+            <input type="checkbox" name="sortcites" id="sortcites" checked/>
+            <span class="note">If <em>style=numeric</em>, sorts cites by crescent order.</span>
+            <br/>
+            <p>Sorting
+                <select name="sorting">
+                    <option value="none">none</option>
+                    <option value="nyt" selected>name-year-title</option>
+                    <option value="ynt">year-name-title</option>
+                </select>
+            </p>
+            
             <!--maxbibnames=99,     % Never use 'et al' in the bibliography
                 giveninits=true,    % render all first and middle names as initials
                 hyperref=true       % Hyperlinks in citations: true(*) false

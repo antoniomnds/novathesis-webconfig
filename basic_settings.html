@@ -63,7 +63,7 @@
         <h2>Basic settings</h2>
         <form action="" target="_self" method="GET">
             <!--action sends the form data to a form handler page (server side)-->
-            <p>Language
+            <p>Main language
                 <select name="lang">
                     <option value="en" selected>English</option>
                     <option value="fr">Français</option>
@@ -88,30 +88,51 @@
                 </select>
             </p>
             <label for="aftercover">Aftercover</label>
-            <input type="checkbox" name="aftercover" id="aftercover" checked/>
+            <input type="checkbox" name="aftercover" id="aftercover" unchecked/><span class="note">Include or don't include the contents of the <em>aftercover</em> file. The default is for this file to be ignored.</span>
             <br/>
-            <p>Link color (set black for printing)
+            <p>Link color
                 <select name="linkcolor">
                     <option value="darkblue" selected>Dark Blue</option>
                     <option value="black">Black</option>
                 </select>
+                <span class="note">The color for all the hyperlinks in the document. Set it <em>black</em> for printing. The <em>media=paper</em> option (see below) will override this option to <em>black</em>.</span>
             </p>
-            <label title="Uncheck for submitted versions who should not have the list of committee members" for="printcommittee">Print committee</label>
+            <label for="printcommittee">Print committee</label>
             <input type="checkbox" name="printcommittee" id="printcommittee" checked/>
-            <br/>
-            <br/>
-            <label title="Unchecked for final version" for="draft">Draft</label>
+            <span class="note">Uncheck for submitted versions who should not have the list of committee members.</span>
+            <!--##########################
+            ####### MEMOIR OPTIONS #######
+            ###########################-->
+            <p>Paper size
+                <select name="papersize">
+                    <option value="a4paper" selected>A4</option>
+                    <option value="letter">Letter</option>
+                </select>
+            </p>
+            <p>Font size
+                <select name="fontsize">
+                    <option value="10">10</option>
+                    <option value="11" selected>11</option>
+                    <option value="12">12</option>
+                </select>
+            </p>
+            <label for="draft">Draft</label>
             <input type="checkbox" name="draft" id="draft" unchecked/>
+            <span class="note">Uncheck for final version</span>
             <br/>
-            <p title="Screen: left and right margins are equal, colored links 
-Paper: left and right margins are different, black links">Media
+            <p>Media
                 <select name="media">
                     <option value="screen" selected>Screen</option>
                     <option value="paper">Paper</option>
                 </select>
+                <span class="note"><em>Screen:</em> left and right margins are equal and use colored links. <br/><em>Paper:</em> left and right margins are different and use black links.</span>
             </p>
+            <!--##########################
+            ### END OF MEMOIR OPTIONS ####
+            ###########################-->
             <input type="submit" value="Submit" />
         </form>
+        <br/>
         <br/>
         <a href="index.html">
             <button>Back</button>

@@ -36,22 +36,28 @@ a {
     text-decoration: none;
 }
 
+.note {
+    display: inline-block;
+    vertical-align: text-top;
+    font-size: smaller;
+    margin-left: 10px;
+    background-color: #eeeeee;
+    border-radius: 4px;
+    box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.2); /* offset-x | offset-y | blur-radius | spread-radius | color */
+}
+
 nav {
-    position: sticky;
-    /* only works when parent is showing! */
-    position: -webkit-sticky;
-    /* Safari */
+    position: sticky; /* only works when parent is showing! */
+    position: -webkit-sticky; /* Safari */
     top: 0;
     z-index: 2;
 }
 
 nav ul {
-    list-style-type: none;
-    /* removes the bullets */
+    list-style-type: none; /* removes the bullets */
     margin: 0;
     padding: 0;
-    overflow: hidden;
-    /* prevents li elements from going outside of the list */
+    overflow: hidden; /* prevents li elements from going outside of the list */
     background-color: #f3f3f3;
     border: 1px solid #e7e7e7;
 }
@@ -61,7 +67,6 @@ nav li {
 }
 
 /* Nav links and dropdown button */
-
 nav li a,
 .dropbtn {
     display: inline-block;
@@ -72,7 +77,6 @@ nav li a,
 }
 
 /*  Change the background color of inactive links when hovered and the dropdown button when the dropdown content is shown */
-
 nav li a:hover:not(.active),
 .dropdown:hover .dropbtn {
     background-color: #dddddd;
@@ -84,13 +88,11 @@ nav li a.active {
 }
 
 /* Hide the link that should open and close the topnav on small screens */
-
 nav li.icon {
     display: none;
 }
 
 /* Page content */
-
 .content {
     padding: 16px;
 }
@@ -100,25 +102,22 @@ nav li.icon {
 }
 
 /* Container to position the dropdown content */
-
 .dropdown {
     display: inline-block;
 }
 
 /* Dropdown content (hidden by default) */
-
 .dropdown-content {
     display: none;
     position: absolute;
     right: 0;
     background-color: #f9f9f9;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); /* offset-x | offset-y | blur-radius | spread-radius | color */
     z-index: 1;
 }
 
 /* Links inside the dropdown */
-
 .dropdown-content a {
     color: black;
     padding: 12px 16px;
@@ -128,20 +127,17 @@ nav li.icon {
 }
 
 /* Change color of dropdown links on hover */
-
 .dropdown-content a:hover {
     background-color: #f1f1f1;
 }
 
 /* Show the dropdown menu on hover */
-
 .dropdown:hover .dropdown-content {
     display: block;
 }
 
 
 /* When the screen is less than 850 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains open and close the topnav (.icon) */
-
 @media screen and (max-width: 850px) {
 
     nav li:not(:first-child),
@@ -264,8 +260,7 @@ select {
     padding: 8px 12px;
     position: absolute;
     top: 0;
-    border-radius: 4px;
-    /* Rounded border */
+    border-radius: 4px; /* Rounded border */
     background-color: rgba(0, 0, 0, 0.12);
 }
 
@@ -358,7 +353,7 @@ select {
     }
 }
 
-/* IMAGE FILTERING */
+/******* SLIDESHOW FILTER ********/
 
 #myBtnContainer {
     padding-top: 5px;
